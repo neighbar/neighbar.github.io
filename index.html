@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja" class="h-100 w-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Noto+Serif+JP&display=swap');
+    body {
+        background: #000;
+        color: #fff;
+    }
+    h1 {
+        position: relative;
+        font-family: "Montserrat Subrayada", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        margin-bottom: 7rem;
+        color: #000;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) skewX(-20deg);
+            z-index: -1;
+            display: block;
+            width: 18rem;
+            height: 100%;
+            background: crimson;
+        }
+    }
+    .link {
+        font-size: 3rem;
+        margin: 0 0.5em;
+        color:aqua;
+        &:hover {
+            color:aquamarine;
+        }
+    }
+  </style>
+</head>
+<body class="h-100 w-100">
+    <div class="d-flex flex-column justify-content-center align-content-center h-100 w-100">
+        <p class="text-center">渋谷のカクテルバー</p>
+        <h1 class="text-center">NEIGHBAR</h1>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.youtube.com/@NEIGHBARBASE" class="link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/neighbar_official/" class="link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@openbar_after30daysman" class="link"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://lin.ee/G8uYgY8" class="link"><i class="fa-brands fa-line"></i></a>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <table class="table  table-borderless text-white">
+            <thead>
+              <tr>
+                <th class="text-right" style="width: 35%;" scope="col">店舗名</th>
+                <td>NEIGHBAR</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-right" scope="row">住所</th>
+                <td>〒151-0063 東京都渋谷区富ケ谷１丁目２−１４ 池田ビル２F</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="container mb-5">
+        <p class="text-center">&copy; NEIGHBAR</p>
+    </div>
+</body>
+</html>
